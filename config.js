@@ -106,6 +106,6 @@ window.INVITATION_CONFIG = {
     trackSubtitle: "Giai điệu piano dịu nhẹ",
     // Nếu bạn có file nhạc MP3 riêng, chép vào thư mục assets/ và điền tên file vào đây (vd: "assets/nhac-nen.mp3").
     // Để trống ("") để phát bản nhạc piano ấm áp được tích hợp sẵn (không cần mạng).
-    customAudioUrl: "",
+    customAudioUrl: "assets/nhac-nen.mp3",
   },
 };
