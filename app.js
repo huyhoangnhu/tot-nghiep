@@ -40,21 +40,6 @@
     $("letter-closing").textContent = cfg.letter.closing;
     $("letter-signature").textContent = cfg.letter.signature;
 
-    // Timeline
-    const timelineEl = $("timeline-list");
-    timelineEl.innerHTML = cfg.schedule
-      .map(
-        (item) => `
-        <article class="timeline-item ${item.highlight ? "timeline-item--highlight" : ""}">
-          <span class="timeline-dot" aria-hidden="true"></span>
-          <span class="timeline-time">${escapeHtml(item.time)}</span>
-          <h3 class="timeline-title">${escapeHtml(item.title)}</h3>
-          <p class="timeline-desc">${escapeHtml(item.description)}</p>
-        </article>
-      `
-      )
-      .join("");
-
     // Venue & Maps
     $("venue-name").textContent = cfg.ceremony.venueName;
     $("venue-address").textContent = cfg.ceremony.address;
